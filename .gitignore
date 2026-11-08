@@ -1,0 +1,26 @@
+# Секреты и локальные конфиги (Самое важное!)
+.env
+.env.local
+
+# Системные файлы и кэши IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Go (Backend)
+/backend/api
+/backend/cmd/api/api
+*.exe
+*.test
+*.out
+vendor/
+
+# JS/TS (Frontend)
+node_modules/
+dist/
+build/
+.npm/
+*.log
+
+# Локальная база данных (если вольюмы сохраняются в папку проекта)
+postgres_data/
