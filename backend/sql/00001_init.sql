@@ -1,6 +1,4 @@
-DROP TABLE IF EXISTS guests;
-DROP TABLE IF EXISTS users;
-
+-- +goose Up
 CREATE TABLE users (
   id SERIAL PRIMARY KEY,
   user_login VARCHAR NOT NULL,
@@ -18,3 +16,7 @@ CREATE TABLE guests (
 );
 
 CREATE INDEX indx_guests_full_name ON guests(full_name);
+
+-- +goose Down
+DROP TABLE IF EXISTS guests;
+DROP TABLE IF EXISTS users;
